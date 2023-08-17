@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversor de Cores</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conversor de Cores</h1>
+        <div class="color-inputs">
+            <label for="rgbInput">RGB:</label>
+            <input type="text" id="rgbInput" placeholder="Ex: 255, 0, 0">
+            <button id="normalizeBtn">Normalizar</button>
+        </div>
+        <div class="color-inputs">
+            <button id="convertToHSVBtn">Converter para HSV</button>
+            <button id="convertToCMYKBtn">Converter para CMYK</button>
+            <button id="convertToGrayBtn">Converter para Escala de Cinza</button>
+        </div>
+        <div class="color-inputs">
+            <label for="hsvInput">HSV:</label>
+            <input type="text" id="hsvInput" placeholder="Ex: 120, 50%, 75%">
+            <button id="hsvToRGB">Converter para RGB</button>
+        </div>
+        <div class="color-inputs">
+            <label for="cmykInput">CMYK:</label>
+            <input type="text" id="cmykInput" placeholder="Ex: 0%, 50%, 100%, 0%">
+            <button id="cmykToRGB">Converter para RGB</button>
+        </div>
+        <div class="color-result">
+            <h2>Resultado:</h2>
+            <p id="resultOutput">---</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
